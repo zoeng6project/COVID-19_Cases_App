@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container text-center">
+    <h1 > COVID-19 cases in Ontario </h1><br>
+        <div class="row align-items-start">
+          <div class="col">
+            <h6>Date Range</h6>
+            <label for="start">From:</label>
+            <input type="date" id="from" name="trip-start" value="2021-01-01" min="2020-01-22" max="2023-03-09" />
+            <br><label for="start">To:</label>
+            <input type="date" id="to" name="trip-end" value="2021-01-15" min="2020-01-22" max="2023-03-09" />
+            <br><button type="button" class="btn btn-info" id="updateButton">Update</button>
+          </div>
+          <div class="col">
+            <h6>Result</h6>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Date</th>
+                        <th scope="col">Total Cases</th>
+                        <th scope="col">New Cases</th>
+                    </tr>
+                </thead>
+                <tbody id="result"></tbody>
+            </table>
+          </div>
+
+        </div>
+    </div>
+
+    <script src="assign3.js"></script>
+</body>
+</html>

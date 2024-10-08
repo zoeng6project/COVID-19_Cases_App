@@ -1,0 +1,11 @@
+/* using bootstrap for main CSS layout and format  */
+
+/* update header style */
+h1 {
+    font-size: 2em; 
+    color: #BC8F8F;    
+    font-family: 'Arial', sans-serif; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    padding: 2%;
+}
